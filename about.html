@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Passionately</title>
+        <meta name="description" content="Is satisfaction a trait found in mediocre artists?">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" type="image/png" href="../favicon.png">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body class="home">
+        <style>
+        #tabpage_2 {
+            display: none;
+        }
+        </style>
+    
+        <div id="container">
+            <header class="header" id="header" role="banner">
+                    <a href="../map/" class="maplink">&nbsp;</a>
+                    <a href="../" id="logo">
+                        <img id="logo-button" src="../images/logo.svg">
+                    </a>
+            </header> <!-- end header -->
+            <div class="story-1">
+                <div class="wrap">
+                    <div class="threecol first"><img src="../images/story-1-1.svg"></div>
+                    <div class="sixcol">
+                        <p>Have you ever wondered:</p>
+                        <h3>is it possible to feel successful and satisfied?</h3>
+                    </div>
+                    <div class="threecol last"><img src="../images/story-1-2.svg"></div>
+                </div>
+            </div>
+            <div class="story-2">
+                <div class="wrap">
+                    <div class="sixcol first">
+                        <img src="../images/story-3-1.svg">
+                    </div>
+                    <div class="sixcol last">
+                        <h3>We’re driving across the country</h3>
+                        <p>to interview artists who we think are passionate to find out how or if they feel satisified.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-3">
+                <div class="wrap">
+                    <div class="sixcol last">
+                        <a href="../map/"><img src="../images/story-2-1.svg"></a>
+                    </div>
+                    <div class="sixcol first">
+                        <h3>Follow us as we find out</h3>
+                        <p>if beautiful things can be created by people who feel satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-4">
+                <div class="wrap">
+                    <div class="threecol last">
+                        <img src="../images/story-4-1.png">
+                    </div>
+                    <div class="ninecol first">
+                        <p class="quote">I’m never satisfied, but I want to believe in a world where hard workers and good artists can sleep at night without their passion as their pillow.</p>
+                        <h3><a href="http://www.kylewaynebenson.com">Kyle Wayne Benson</a></h3>
+                        <span class="tagline">Graphic Design</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="threecol first">
+                        <img src="../images/story-4-2.png">
+                    </div>
+                    <div class="ninecol last">
+                        <p class="quote even">I've always worried that to be "successful," you have to be obsessed and lead an unbalanced life.</p>
+                        <h3 class="even"><a href="http://claireab.tumblr.com/">Claire A.B.</a></h3>
+                        <span class="even tagline">Illustration</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="threecol last">
+                        <img src="../images/story-4-3.png">
+                    </div>
+                    <div class="ninecol first">
+                        <p class="quote">*fart*</p>
+                        <h3>Joshua</h3>
+                        <span class="tagline">Butt Wiggle</span>
+                    </div>
+                </div>
+            </div>
+        <footer id="footer">
+            <ul class="wrap">
+                <li>
+                    <div class="eightcol first"><h2>Contact Us</h2>
+                    </div>
+                    <div class="fourcol last">
+                    <a href="mailto:passion@kyleandclaire.com">passion@kyleandclaire.com</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="eightcol first"><h2>How can I help?</h2>
+                    <span>Pay for our gas, or call our moms to let them know we're okay and eating all of our vegetables.</span></div>
+                    <div class="fourcol last">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick" />
+                        <input type="hidden" name="hosted_button_id" value="DDENDAHKH3YX6" />
+                        <input border="0" type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" value="Donate" class="button" />
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" class="" height="1" />
+                        </form>
+                    </div>
+                </li>
+                    <div class="copyright"><img src="../images/logo-dark.svg"><p>&copy; COPYRIGHT KYLE &amp; CLAIRE 2013</p></div>
+            </ul>
+        </footer>
+        <script>
+            var _gaq=[['_setAccount','UA-26480322-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+
+            window.onload=function() {
+
+              // get tab container
+              var container = document.getElementById("tabContainer");
+                // set current tab
+                var navitem = container.querySelector(".tabs ul li");
+                //store which tab we are on
+                var ident = navitem.id.split("_")[1];
+                navitem.parentNode.setAttribute("data-current",ident);
+                //set current tab with class of activetabheader
+                navitem.setAttribute("class","tabActiveHeader");
+
+                //hide two tab contents we don't need
+                var pages = container.querySelectorAll(".tabpage");
+                for (var i = 1; i < pages.length; i++) {
+                  pages[i].style.display="none";
+                }
+
+                //this adds click event to tabs
+                var tabs = container.querySelectorAll(".tabs ul li");
+                for (var i = 0; i < tabs.length; i++) {
+                  tabs[i].onclick=displayPage;
+                }
+            }
+
+            // on click of one of tabs
+            function displayPage() {
+              var current = this.parentNode.getAttribute("data-current");
+              //remove class of activetabheader and hide old contents
+              document.getElementById("tabHeader_" + current).removeAttribute("class");
+              document.getElementById("tabpage_" + current).style.display="none";
+
+              var ident = this.id.split("_")[1];
+              //add class of activetabheader to new active tab and show contents
+              this.setAttribute("class","tabActiveHeader");
+              document.getElementById("tabpage_" + ident).style.display="block";
+              this.parentNode.setAttribute("data-current",ident);
+            }
+        </script>
+    </body>
+</html>

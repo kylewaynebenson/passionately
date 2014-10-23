@@ -1,0 +1,36 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+
+.page, .home {
+	.list {
+	    section {
+	        .data {
+	          font-size: 1.2em;
+	        }
+	    }
+	}
+}
+.single {
+	#commentform {
+		li {
+			input {
+				min-width: 50%;
+				max-width: 50%;
+			}
+			&:first-of-type input {
+				margin-top: 10px;
+			}
+		}
+		textarea {
+			min-width: 50%;
+		}
+	}
+}

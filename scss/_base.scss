@@ -1,0 +1,729 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+/*********************
+GRID STYLES
+*********************/
+
+  /* layout & column defaults */
+  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+    position: relative;
+    float: left;
+    width: 99.999999993%;
+  }
+
+  .first {
+    margin-left: 0;
+  }
+
+  .last {
+    float: right;
+  }
+
+/*********************
+GENERAL STYLES
+*********************/
+body, html {
+	font-family: "Gibson-Semibold", "Gotham", "Gotham-Book", "Helvetica", sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-top: 0px;
+	color: $black;
+}
+body {
+	background: $grey;
+}
+.map {
+	#container {
+		#header {
+			background: $grey;
+		}
+		.ocean {
+			background: $blue;
+		}
+		.map {
+			background: $blue url(../images/map.svg) no-repeat;
+			background-size: 100% auto;
+			background-position: center;
+			width: 700px;
+			height: 265px;
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+			position: relative;
+			.map-marker {
+				position: absolute;
+		        display: block;
+		        font-family: "Gibson-Bold";
+		        color: $blue-dark;
+		        font-size: 1em;
+		        text-align: center;
+		        line-height: 2em;
+		        width: 25px;
+		        height: 30px;
+		        background: url(../images/blue-marker.png) no-repeat;
+		        text-decoration: none;
+		        background-size: 100%;
+		      &:nth-of-type(1) { left: 20%; top: 35%; }
+		      &:nth-of-type(2) { left: 15.2%; top: 26.5%; }
+		      &:nth-of-type(3) { &:before { content: "3";} }
+		      &:nth-of-type(4) { &:before { content: "4";} }
+		      &:nth-of-type(5) { &:before { content: "5";} }
+		      &:nth-of-type(6) { &:before { content: "6";} }
+		      &:nth-of-type(7) { &:before { content: "7";} }
+		      &:nth-of-type(8) { &:before { content: "8";} }
+			}
+
+		}
+	}
+	#footer {
+		margin-top: 0px;
+	}
+}
+.home, .page {
+	#content {
+		padding: $margin;
+		width: 100%;
+		float: left;
+	}
+	.video {
+		background: $grey-dark url(../images/loading-two.gif) no-repeat;
+		background-position: center center;
+		background-size: 100px auto;
+		width: 100%;
+		height: auto;
+		min-height: 220px;
+		margin-bottom: $margin;
+	}
+	section {
+		background: $white;
+		margin-bottom: $margin-half;
+		padding: $margin;
+		@include clearfix;
+		header {
+			background: $blue;
+			margin: -$margin;
+			margin-bottom: $margin;
+			padding: $margin;
+		h1 {
+				margin-top: -6px;
+				margin-bottom: $margin-half;
+				float: left;
+				color: $blue-dark;
+				font-family: "Gibson-Semibold";
+				font-size: 2.4em !important;
+			}
+			span {
+				color: $white;
+			}
+			.data {
+				a {
+					color: $white;
+					text-decoration: none;
+				}
+				.location, .occupation, .link, .time {
+					color: $grey;
+				}
+			}
+			.biography {
+				color: $blue-dark;
+				font-family: "Gibson-Regular" !important;
+				font-size: 16px;
+			}
+			.date {
+				color: $grey;
+				margin-bottom: 0px;
+				font-family: "Gibson-Regular" !important;
+				font-size: 16px;
+			}
+		} 
+			h1 {
+				margin-top: -6px;
+				float: left;
+				margin-bottom: $margin-half;
+				color: $grey-text;
+				font-family: "Gibson-Semibold";
+				font-size: 2em;
+			}
+			span {
+				color: $grey-text;
+			}
+			img {
+				float: left;
+				margin-right: $margin;
+				max-width: 100%;
+			}
+			.data {
+
+				a {
+					color: $grey-text;
+					text-decoration: none;
+				}
+				.location, .occupation, .link, .time {
+					margin-right: $margin-half;
+					color: $grey-text;
+					@include inline-block;
+					&:before {
+						content: " ";
+						@include inline-block;
+						width: 18px;
+						height: 18px;
+						margin-right: 5px;
+						background: url(../images/location-marker.svg) no-repeat;
+						background-size: 100%;
+					}
+				}
+				.occupation {
+					&:before {
+						background: url(../images/occupation-marker.svg) no-repeat;
+					}
+				}
+				.link {
+					&:before {
+						background: url(../images/link-marker.svg) no-repeat;
+					}
+				}
+				.time {
+					&:before {
+						background: url(../images/time-marker.svg) no-repeat;
+					}
+				}
+			}
+		.question {
+			color: darken($blue-dark,10%);
+			font-family: "Gibson-Regular" !important;
+			font-size: 16px;
+		}
+		.claire {
+			&:before {
+				content: "Claire";
+				color: $blue-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				text-transform: uppercase;
+				font-size: 10px;
+				margin-right: $margin-half;
+				font-family: "Gibson-Semibold" !important;
+				background: $blue;
+			}			
+		}
+		.kyle {
+			&:before {
+				content: "Kyle";
+				color: $blue-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				text-transform: uppercase;
+				font-size: 10px;
+				margin-right: $margin-half;
+				font-family: "Gibson-Semibold" !important;
+				background: $blue;
+			}			
+		}
+		.dan-answer {
+			&:before {
+				content: "Dan";
+				color: $grey-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				text-transform: uppercase;
+				font-size: 10px;
+				font-family: "Gibson-Semibold" !important;
+				margin-right: $margin-half;
+				background: $grey;
+			}
+		}
+		.cassi-answer {
+			&:before {
+				content: "Cassi";
+				color: $grey-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				text-transform: uppercase;
+				font-size: 10px;
+				font-family: "Gibson-Semibold" !important;
+				margin-right: $margin-half;
+				background: $grey;
+			}
+		}
+		.john-answer {
+			&:before {
+				content: "John";
+				color: $grey-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				text-transform: uppercase;
+				font-size: 10px;
+				font-family: "Gibson-Semibold" !important;
+				margin-right: $margin-half;
+				background: $grey;
+			}
+		}
+		.andrew-answer {
+			&:before {
+				content: "Andrew";
+				color: $grey-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				font-family: "Gibson-Semibold" !important;
+				text-transform: uppercase;
+				font-size: 10px;
+				margin-right: $margin-half;
+				background: $grey;
+			}
+		}
+		.answer {
+			color: darken($grey-dark,10%);
+			font-family: "Gibson-Regular" !important;
+			font-size: 16px;
+		}
+		blockquote {
+			font-size: 2.2em;
+			background: $grey;
+			padding: $margin;
+			color: darken($grey-dark,2%);
+			margin-left: -$margin;
+			margin-right: -$margin;
+			&:before {
+				content:"”";
+				color: $white;
+			}
+			&:after {
+				content:"”";
+				color: $white;
+			}
+		}
+	}
+	.coming-soon {
+		background: lighten($grey,4%);
+		border: 5px solid darken($grey,10%);
+	}
+	.list {
+		section.article {
+			h1 {
+				display: block;
+				float: left;
+			}
+			p {
+				color: $grey-dark;
+			}
+		}
+		section {
+			padding: $margin-half;
+			padding-bottom: 0px;
+			.preview {
+				width: 70px;
+				height: 70px;
+				display: block;
+				float: left;
+				margin-right: $margin-half;
+				margin-bottom: $margin-half;
+			}
+			.andrew {
+				background: url(../people/1-AndrewColinBeck.png) no-repeat;
+				background-size: auto 100%;
+				background-position: center center;
+			}
+			.danc {
+				background: url(../people/2-DanChristofferson.png) no-repeat;
+				background-size: auto 100%;
+				background-position: center center;
+			}
+			.cassie {
+				background: url(../people/3-CassandraElton.png) no-repeat;
+				background-size: auto 100%;
+				background-position: center center;
+			}
+			.johnh {
+				background: url(../people/4-JohnHendrix.png) no-repeat;
+				background-size: auto 100%;
+				background-position: center center;
+			}
+			h1 {
+				font-size: 2.0em;
+				a {
+					color: $grey-text;
+					&:hover {
+						border-bottom: 5px solid $grey-text;
+					}
+					&:active {
+						color: $grey-dark;
+						border-bottom: 5px solid $grey-dark;	
+					}
+				}
+			}
+		}
+	}
+	#header {
+		background: $blue;
+		width: 100%;
+		min-height: 80px;
+		margin-bottom: $margin;
+		position: relative;
+		.maplink {
+			width: 100%;
+			height: 90px;
+			display: block;
+		}
+		#logo {
+			position: absolute;
+			left: 50%;
+			z-index: 1;
+			bottom: 12px;
+			margin-left: -50px;
+			margin-bottom: -50px;
+		}
+	}
+	a {
+		color: $blue-dark;
+		text-transform: none;
+		&:hover {
+			color: lighten($blue-dark,15%);
+		}
+		&:active {
+			color: $blue-darkest;
+		}
+	}
+	footer {
+		width: 100%;
+		display: block;
+		background: $blue-dark;
+		color: $blue-darkest;
+		padding: $margin-half;
+		margin-top: $margin;
+	}
+	article {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	nav {
+		font-size: 1.2em;
+		width: 100%;
+		li {
+			text-decoration: none;
+			float: right;
+			margin-right: $margin-half;
+			margin-left: $margin-half;
+			background: $grey-dark;
+			color: $grey;
+			text-align: center;
+			padding: 8px $margin 8px $margin;
+			cursor: pointer;
+			&:hover {
+				@include box-shadow (0px -2px 5px rgba(50, 50, 50, 0.13));
+			}
+			&:active {
+				@include box-shadow ( 0px 0px 0px rgba(50, 50, 50, 0.0));
+			}
+		}
+		.tabActiveHeader {
+			background: $white !important;
+			color: $grey-text;
+			float: left;
+		}
+		@include clearfix;
+	}
+	.half-width-links {
+		height: 80px;
+		display: block;
+		padding: $margin-half $margin;
+		background: $blue;
+		margin-bottom: $margin-half;
+		h2 {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-family: "Gibson-Semibold";
+			font-size: 3em !important;
+		}
+		&:hover {
+			@include box-shadow (0px 0px 5px rgba(50, 50, 50, 0.08));
+		}
+	}
+	.map-link {
+		background: $blue url(../images/map.png) no-repeat;
+		background-size: auto 150%;
+		background-position: 90% -15px;
+	}
+	.about-link {
+		background: $yellow url(../images/story-3-1.png) no-repeat;
+		background-size: auto 150% !important;
+		background-position: 90% -15px;
+		color: $yellow-dark;
+		&:hover {
+			color: lighten($yellow-dark, 6%);
+		}
+	}
+	.story-1, .story-2, .story-3, .story-4 {
+		@include clearfix;
+		padding-top: $margin;
+		padding-bottom: $margin;
+		h3 {
+			font-size: 46px;
+			font-family: "Gibson-Semibold";
+			line-height: 130%;
+			margin: $margin auto;
+			text-align: center;
+			max-width: 450px;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		p {
+			font-size: 22px;
+			margin: $margin auto;
+			padding-left: 10%;
+			padding-right: 10%;
+			text-align: center;
+			max-width: 450px;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 97%;
+		}
+	}
+	.story-1 {
+		background: $grey;
+		text-align: center;
+		h3 {
+			font-size: 34px;
+			max-width: 421px;
+			display: block;
+			margin: 0 auto;
+			color: $grey-dark;
+			margin-bottom: $margin-half;
+		}
+		p {
+			color: $blue-dark;
+			margin-bottom: 10px;
+		}
+	}
+	.story-2 {
+		background: $yellow-dark;
+		h3 {
+			color: $blue-dark;
+			margin-bottom: 10px;
+			max-width: 200px;
+    		padding-left: 0px;
+	      	padding-right: 0px;
+		}
+		p {
+			color: $yellow;
+			margin-top: 0px;
+		}
+	}
+	.story-3 {
+		background: $yellow;
+		h3 {
+			color: $blue-dark;
+			margin-bottom: 10px;
+		}
+		p {
+			color: $yellow-dark;
+			margin-top: 0px;
+		}
+	}
+	.story-4 {
+		background: $grey;
+		color: $grey-dark;
+		h3 {
+			color: $grey-dark;
+			margin: 0 auto;
+			text-align: center;
+			max-width: 90%;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.tagline {
+			text-transform: uppercase;
+			color: $grey-dark;
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			font-size: 1.4em;
+			max-width: 90%;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.quote {
+			
+			border: 5px solid $grey-dark;
+			padding: $margin-half;
+			max-width: 90%;
+			margin-bottom: $margin-half;
+			text-align: center;
+			position: relative;
+				&:after {
+					content: " ";
+					position: absolute;
+					width: 60px;
+					height: 60px;
+					right: 50%;
+					bottom: 100%;
+					margin-right: -30px;
+					margin-bottom: -2px;
+					background: url(../images/triangle-top.svg) no-repeat;
+					background-size: 100%;
+				}
+		}
+		img {
+			@include border-radius (50%);
+			width: 200px;
+			height: 200px;
+			display: block;
+			margin: $margin auto;
+			
+			@include box-shadow (0 0 0 5px $grey-dark);
+		}
+	}
+	.still {
+		margin-bottom: -$margin-half;
+		margin-top: -$margin-half;
+		width: 100% !important;
+	}
+
+} /* Default */
+.page {
+	h1, .data {
+		width: 100%;
+	}
+}
+
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 96%;
+	margin: 0 auto;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+
+	/* on hover */
+	&:hover, &:focus {
+	}
+
+	/* on click */
+	&:active {
+
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, #fn-heading {
+	font-family: "Gibson-Regular", "Gotham", "Gotham-Book", "Helvetica", sans-serif;
+	text-rendering: optimizelegibility;
+	font-weight: normal !important;
+	line-height: 110%;
+	strong {
+		font-family: "Nexa-Book", "Gotham", "Gotham-Bold", "Helvetica", sans-serif;
+		font-weight: normal;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+h2 {
+	font-size: 42px;
+}
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+#footer {
+	clear: both;
+		ul {
+
+			li {
+				border-bottom: 5px solid $blue-darkest;
+				@include clearfix;
+				padding: $margin-half 0px;
+				line-height: 120%;
+				a, .button {
+					font-family: "Gibson-Semibold", "Gotham", "Gotham-Book", "Helvetica", sans-serif;
+					padding: 8px 20px;
+					display: block;
+					max-width: 300px;
+					margin: $margin-half auto;
+					text-align: center;
+					text-decoration: none;
+					border: 0px;
+					background: $blue-darkest;
+					text-transform: uppercase;
+					color: $blue-dark;
+					&:hover {
+						@include box-shadow (0px 0px 8px rgba(50, 50, 50, 0.43));
+					}
+					&:active {
+						@include box-shadow (inset 0px 0px 8px rgba(50, 50, 50, 0.43));
+					}
+				}
+				h2 {
+					margin-top: 0px;
+					margin-bottom: 0px;
+					display: block;
+					line-height: 140%;
+				}
+			}
+			.copyright {
+				@include clearfix;
+				img {
+					margin-right: $margin-half;
+					margin-top: $margin-half;
+					float: left;
+				}
+				p {
+					padding-top: 25px;
+				}
+
+			}
+
+		}
+
+	}
+
+

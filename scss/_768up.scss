@@ -1,0 +1,382 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+/*********************
+GRID STYLES
+*********************/
+  .onecol    { width: 5.801104972%;  }       /* 4.85%;  } /* grid_1  */
+  .twocol    { width: 14.364640883%; }       /* 13.45%; } /* grid_2  */
+  .threecol  { width: 22.928176794%; }       /* 22.05%; } /* grid_3  */
+  .fourcol   { width: 31.491712705%; }       /* 30.75%; } /* grid_4  */
+  .fivecol   { width: 40.055248616%; }       /* 39.45%; } /* grid_5  */
+  .sixcol    { width: 48.618784527%; }       /* 48%;    } /* grid_6  */
+  .sevencol  { width: 57.182320438000005%; } /* 56.75%; } /* grid_7  */
+  .eightcol  { width: 65.74585634900001%; }  /* 65.4%;  } /* grid_8  */
+  .ninecol   { width: 74.30939226%; }        /* 74.05%; } /* grid_9  */
+  .tencol    { width: 82.87292817100001%; }  /* 82.7%;  } /* grid_10 */
+  .elevencol { width: 91.436464082%; }       /* 91.35%; } /* grid_11 */
+  .twelvecol { width: 99.999999993%; }       /* 100%;   } /* grid_12 */
+
+  /* layout & column defaults */
+  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+    position: relative;
+    float: left;
+    margin-left: 2.762430939%;
+  }
+
+  .first {
+    margin-left: 0;
+  }
+
+  .last {
+    float: right;
+  }
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+}
+.page {
+	.video {
+		min-height: 505px;
+	}
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	max-width: 900px;
+}
+.map {
+  #container {
+    .ocean {
+      position: relative;
+      .map {
+        height: 480px;
+        max-width: 100%;
+        .map-marker {
+          font-size: 1.6em;
+          line-height: 2em;
+          width: 45px;
+          height: 56px;
+        }
+      }
+      .whale {
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 100px;
+        right: 50%;
+        margin-right: -475px;
+        z-index: 2;
+        top: 46%;
+        background: url(../images/whale.svg) no-repeat;
+        text-decoration: none;
+        background-size: 100%;
+      }
+      .boat {
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 100px;
+        left: 50%;
+        margin-left: -420px;
+        z-index: 2;
+        top: 75%;
+        background: url(../images/boat.svg) no-repeat;
+        text-decoration: none;
+        background-size: 100%;
+      }
+    }
+  }
+}
+.page, .home {
+  section {
+    header {
+      h1 {
+        font-size: 3em !important;
+      }
+    }
+  }
+  nav {
+    width: 100%;
+    li {
+      a {
+        text-decoration: none;
+        float: left;
+        margin-right: $margin-half;
+        margin-left: $margin-half;
+        background: $white;
+        color: $grey-dark;
+        border: 6px solid $white;
+        border-bottom: 0px;
+        text-align: center;
+        padding: 8px $margin 8px $margin;
+        &:hover {
+          color: $grey-dark;
+          background: $white;
+          @include box-shadow (0px -2px 5px rgba(50, 50, 50, 0.13));
+        }
+        &:active {
+          color: darken($grey-dark, 15%);
+          @include box-shadow (inset 0px -2px 5px rgba(50, 50, 50, 0.13));
+        }
+
+      }
+      .non-current {
+        background: $grey !important;
+        float: right;
+      }
+    }
+    @include clearfix;
+  }
+  .square-still { 
+    width: 50% !important;
+    position: relative;
+    left: 25%;
+    margin-top: $margin;
+    margin-bottom: $margin;
+  }
+  .story-1, .story-2, .story-3, .story-4 {
+    @include clearfix;
+    padding-top: $margin;
+    padding-bottom: $margin;
+    h3 {
+      margin: 0px;
+      margin-top: 0px;
+      text-align: left;
+      max-width: 100%;
+    }
+    p {
+      font-size: 22px;
+      text-align: left;
+      max-width: 100%;
+    }
+  }
+  .story-1 {
+    background: $grey;
+    text-align: center;
+    h3 {
+      text-align: center;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    p {
+      margin-bottom: 10px;
+      text-align: center;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  .story-2 {
+    background: $yellow-dark;
+    h3 {
+      color: $blue-dark;
+      margin-bottom: 10px;
+      padding-left: 10%;
+    }
+    p {
+      color: $yellow;
+      margin-top: 0px;
+    }
+  }
+  .story-3 {
+    background: $yellow;
+    h3 {
+      color: $blue-dark;
+      margin-bottom: 10px;
+    }
+    p {
+      color: $yellow-dark;
+      margin-top: 0px;
+    }
+  }
+  .story-4 {
+    background: $grey;
+    color: $grey-dark;
+    h3 {
+      color: $grey-dark;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 40px;
+    }
+    h3.even, .tagline.even {
+      margin-left: 100px;
+    }
+    .tagline {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      text-align: left;
+      margin-left: 40px;
+      color: $grey-dark;
+    }
+    .quote {
+      padding: $margin-half;
+      margin-right: 60px;
+      margin-bottom: $margin-half;
+      text-align: center;
+      position: relative;
+        &:after {
+          content: " ";
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          margin-right: 0px;
+          right: 0px;
+          bottom: 30px;
+          margin-right: -59px;
+          background: url(../images/triangle.svg) no-repeat;
+          background-size: 100%;
+        }
+    }
+    .quote.even {
+      margin-right: 0px;
+      margin-left: 60px;
+        &:after {
+          left: 0px;
+          bottom: 20px;
+          margin-left: -58px;
+          margin-right: 0px;
+          background: url(../images/triangle-left.svg) no-repeat;
+        }
+    }
+    img {
+      @include border-radius (50%);
+      width: 200px;
+      height: 200px;
+      display: block;
+      margin: $margin auto;
+      
+      @include box-shadow (0 0 0 6px $grey-dark);
+    }
+  }
+  .list {
+      h1 {
+        margin-top: 5px;
+        font-size: 3.0em !important;
+      }
+    .articles {
+      section {
+        &:before {
+          display: block;
+          font-family: "Gibson-Bold";
+          color: $blue-dark;
+          font-size: 24px;
+          text-align: center;
+          line-height: 2em;
+          float: left;
+          margin-right: $margin;
+          margin-left: $margin-half;
+          margin-top: 12px;
+          margin-bottom: 8px;
+          width: 50px;
+          height: 60px;
+          background: url(../images/tan-marker.svg) no-repeat;
+          background-size: 100%;
+        }
+        &:nth-of-type(1) { &:before { content: "1";} }
+        &:nth-of-type(2) { &:before { content: "2";} }
+        &:nth-of-type(3) { &:before { content: "3";} }
+        &:nth-of-type(4) { &:before { content: "4";} }
+        &:nth-of-type(5) { &:before { content: "5";} }
+        &:nth-of-type(6) { &:before { content: "6";} }
+        &:nth-of-type(7) { &:before { content: "7";} }
+        &:nth-of-type(8) { &:before { content: "8";} }
+        &:nth-of-type(9) { &:before { content: "9";} }
+        &:nth-of-type(10) { &:before { content: "10";} }
+        &:nth-of-type(11) { &:before { content: "11";} }
+        &:nth-of-type(12) { &:before { content: "12";} }
+        &:nth-of-type(13) { &:before { content: "13";} }
+        &:nth-of-type(14) { &:before { content: "14";} }
+        &:nth-of-type(15) { &:before { content: "15";} }
+        &:nth-of-type(16) { &:before { content: "16";} }
+        &:nth-of-type(17) { &:before { content: "17";} }
+        }
+        h1 {
+          width: 750px;
+        }
+    }
+    .interviews {
+    section {
+      position: relative;
+      .preview {
+        width: 150px;
+        height: 100px;
+        float: left;
+        margin-bottom: $margin-half;
+        margin-right: $margin;
+      }
+      &:before {
+        display: block;
+        font-family: "Gibson-Bold";
+        color: $blue-dark;
+        font-size: 24px;
+        text-align: center;
+        line-height: 2.2em;
+        float: left;
+        margin-right: $margin;
+        margin-left: $margin-half;
+        margin-top: 20px;
+        width: 50px;
+        height: 60px;
+        background: url(../images/blue-marker.png) no-repeat;
+        background-size: 100%;
+
+      }
+      &:nth-of-type(1) { &:before { content: "1";} }
+      &:nth-of-type(2) { &:before { content: "2";} }
+      &:nth-of-type(3) { &:before { content: "3";} }
+      &:nth-of-type(4) { &:before { content: "4";} }
+      &:nth-of-type(5) { &:before { content: "5";} }
+      &:nth-of-type(6) { &:before { content: "6";} }
+      &:nth-of-type(7) { &:before { content: "7";} }
+      &:nth-of-type(8) { &:before { content: "8";} }
+      &:nth-of-type(9) { &:before { content: "9";} }
+      &:nth-of-type(10) { &:before { content: "10";} }
+      &:nth-of-type(11) { &:before { content: "11";} }
+      &:nth-of-type(12) { &:before { content: "12";} }
+      &:nth-of-type(13) { &:before { content: "13";} }
+      &:nth-of-type(14) { &:before { content: "14";} }
+      &:nth-of-type(15) { &:before { content: "15";} }
+      &:nth-of-type(16) { &:before { content: "16";} }
+      &:nth-of-type(17) { &:before { content: "17";} }
+      &:nth-of-type(18) { &:before { content: "18";} }
+      &:nth-of-type(19) { &:before { content: "19";} }
+      &:nth-of-type(20) { &:before { content: "20";} }
+    }
+  }
+}
+
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+#footer {
+    ul {
+      li {
+        a, .button {
+          float: right;
+          margin: 0px;
+          margin-top: $margin-half;
+        }
+      }
+    }
+  }
+
