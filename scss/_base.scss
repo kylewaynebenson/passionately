@@ -64,23 +64,24 @@ body {
 				position: absolute;
 		        display: block;
 		        font-family: "Gibson-Bold";
-		        color: $blue-dark;
+		        color: $blue;
 		        font-size: 1em;
 		        text-align: center;
 		        line-height: 2em;
 		        width: 25px;
 		        height: 30px;
-		        background: url(../images/blue-marker.png) no-repeat;
+		        background: url(../images/dark-blue-marker.png) no-repeat;
 		        text-decoration: none;
 		        background-size: 100%;
 		      &:nth-of-type(1) { left: 20%; top: 35%; }
-		      &:nth-of-type(2) { left: 15.2%; top: 26.5%; }
-		      &:nth-of-type(3) { &:before { content: "3";} }
-		      &:nth-of-type(4) { &:before { content: "4";} }
-		      &:nth-of-type(5) { &:before { content: "5";} }
-		      &:nth-of-type(6) { &:before { content: "6";} }
-		      &:nth-of-type(7) { &:before { content: "7";} }
-		      &:nth-of-type(8) { &:before { content: "8";} }
+		      &:nth-of-type(2) { left: 16.2%; top: 26.5%; }
+		      &:nth-of-type(3) { left: 55%; top: 25.5%; }
+		      &:nth-of-type(4) { left: 55%; top: 36.5%; }
+		      &:nth-of-type(5) { left: 70%; top: 32%; }
+		      &:nth-of-type(6) { left: 82.5%; top: 27%; }
+		      &:nth-of-type(7) { left: 88%; top: 22%; }
+		      &:nth-of-type(8) { left: 78%; top: 56%; }
+		      &:nth-of-type(9) { left: 80%; top: 70%; }
 			}
 
 		}
@@ -203,6 +204,9 @@ body {
 			font-family: "Gibson-Regular" !important;
 			font-size: 16px;
 		}
+		.note {
+			color: $blue;
+		}
 		.claire {
 			&:before {
 				content: "Claire";
@@ -273,6 +277,76 @@ body {
 				background: $grey;
 			}
 		}
+		.ryan-answer {
+			&:before {
+				content: "Ryan";
+				color: $grey-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				text-transform: uppercase;
+				font-size: 10px;
+				font-family: "Gibson-Semibold" !important;
+				margin-right: $margin-half;
+				background: $grey;
+			}
+		}
+		.greg-answer {
+			&:before {
+				content: "Greg";
+				color: $grey-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				text-transform: uppercase;
+				font-size: 10px;
+				font-family: "Gibson-Semibold" !important;
+				margin-right: $margin-half;
+				background: $grey;
+			}
+		}
+		.dan-cassaro-answer {
+			&:before {
+				content: "Dan";
+				color: $grey-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				text-transform: uppercase;
+				font-size: 10px;
+				font-family: "Gibson-Semibold" !important;
+				margin-right: $margin-half;
+				background: $grey;
+			}
+		}
+		.sterling-answer {
+			&:before {
+				content: "Sterling";
+				color: $grey-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				text-transform: uppercase;
+				font-size: 10px;
+				font-family: "Gibson-Semibold" !important;
+				margin-right: $margin-half;
+				background: $grey;
+			}
+		}
+		.kendrick-answer {
+			&:before {
+				content: "Kendrick";
+				color: $grey-dark;
+				padding: 4px 5px;
+				line-height: 100%;
+				float: left;
+				text-transform: uppercase;
+				font-size: 10px;
+				font-family: "Gibson-Semibold" !important;
+				margin-right: $margin-half;
+				background: $grey;
+			}
+		}
 		.andrew-answer {
 			&:before {
 				content: "Andrew";
@@ -296,6 +370,7 @@ body {
 			font-size: 2.2em;
 			background: $grey;
 			padding: $margin;
+			font-family: "Gibson-Semibold" !important;
 			color: darken($grey-dark,2%);
 			margin-left: -$margin;
 			margin-right: -$margin;
@@ -354,6 +429,32 @@ body {
 				background-size: auto 100%;
 				background-position: center center;
 			}
+			.ryanc {
+				background: url(../people/5-RyanClark.png) no-repeat;
+				background-size: auto 100%;
+				background-position: center center;
+			}
+			.gregc {
+				background: url(../people/6-GregChristman.png) no-repeat;
+				background-size: auto 100%;
+				background-position: center center;
+			}
+			.dancassaro {
+				background: url(../people/7-DanCassaro.png) no-repeat;
+				background-size: auto 100%;
+				background-position: center center;
+			}
+			.sterling {
+				background: url(../people/8-SterlingHundley.png) no-repeat;
+				background-size: auto 100%;
+				background-position: center center;
+			}
+			.kendrick {
+				background: url(../people/9-KendrickKidd.png) no-repeat;
+				background-size: auto 100%;
+				background-position: center center;
+			}
+
 			h1 {
 				font-size: 2.0em;
 				a {
