@@ -841,7 +841,7 @@ body {
 }
 /* line 53, ../scss/_base.scss */
 .map #container .map {
-  background: #83d6ff url(../images/map.svg) no-repeat;
+  background: #83d6ff url(../../images/map.svg) no-repeat;
   background-size: 100% auto;
   background-position: center;
   width: 700px;
@@ -862,7 +862,7 @@ body {
   line-height: 2em;
   width: 25px;
   height: 30px;
-  background: url(../images/dark-blue-marker.png) no-repeat;
+  background: url(../../images/dark-blue-marker.png) no-repeat;
   text-decoration: none;
   background-size: 100%;
 }
@@ -924,7 +924,7 @@ body {
 }
 /* line 99, ../scss/_base.scss */
 .home .video, .page .video {
-  background: #bab3ae url(../images/loading-two.gif) no-repeat;
+  background: #bab3ae url(../../images/loading-two.gif) no-repeat;
   background-position: center center;
   background-size: 100px auto;
   width: 100%;
@@ -1029,20 +1029,20 @@ body {
   width: 18px;
   height: 18px;
   margin-right: 5px;
-  background: url(../images/location-marker.svg) no-repeat;
+  background: url(../../images/location-marker.svg) no-repeat;
   background-size: 100%;
 }
 /* line 187, ../scss/_base.scss */
 .home section .data .occupation:before, .page section .data .occupation:before {
-  background: url(../images/occupation-marker.svg) no-repeat;
+  background: url(../../images/occupation-marker.svg) no-repeat;
 }
 /* line 192, ../scss/_base.scss */
 .home section .data .link:before, .page section .data .link:before {
-  background: url(../images/link-marker.svg) no-repeat;
+  background: url(../../images/link-marker.svg) no-repeat;
 }
 /* line 197, ../scss/_base.scss */
 .home section .data .time:before, .page section .data .time:before {
-  background: url(../images/time-marker.svg) no-repeat;
+  background: url(../../images/time-marker.svg) no-repeat;
 }
 /* line 202, ../scss/_base.scss */
 .home section .question, .page section .question {
@@ -1432,13 +1432,13 @@ body {
 }
 /* line 560, ../scss/_base.scss */
 .home .map-link, .page .map-link {
-  background: #83d6ff url(../images/map.png) no-repeat;
+  background: #83d6ff url(../../images/map.png) no-repeat;
   background-size: auto 150%;
   background-position: 90% -15px;
 }
 /* line 565, ../scss/_base.scss */
 .home .about-link, .page .about-link {
-  background: #f5dfb2 url(../images/story-3-1.png) no-repeat;
+  background: #f5dfb2 url(../../images/story-3-1.png) no-repeat;
   background-size: auto 150% !important;
   background-position: 90% -15px;
   color: #dba639;
@@ -1575,7 +1575,7 @@ body {
   bottom: 100%;
   margin-right: -30px;
   margin-bottom: -2px;
-  background: url(../images/triangle-top.svg) no-repeat;
+  background: url(../../images/triangle-top.svg) no-repeat;
   background-size: 100%;
 }
 /* line 686, ../scss/_base.scss */
@@ -1930,7 +1930,7 @@ you can add resource intensive styles.
     margin-right: -475px;
     z-index: 2;
     top: 46%;
-    background: url(../images/whale.svg) no-repeat;
+    background: url(../../images/whale.svg) no-repeat;
     text-decoration: none;
     background-size: 100%;
   }
@@ -1944,7 +1944,7 @@ you can add resource intensive styles.
     margin-left: -420px;
     z-index: 2;
     top: 75%;
-    background: url(../images/boat.svg) no-repeat;
+    background: url(../../images/boat.svg) no-repeat;
     text-decoration: none;
     background-size: 100%;
   }
@@ -2110,7 +2110,7 @@ you can add resource intensive styles.
     right: 0px;
     bottom: 30px;
     margin-right: -59px;
-    background: url(../images/triangle.svg) no-repeat;
+    background: url(../../images/triangle.svg) no-repeat;
     background-size: 100%;
   }
   /* line 247, ../scss/_768up.scss */
@@ -2124,7 +2124,7 @@ you can add resource intensive styles.
     bottom: 20px;
     margin-left: -58px;
     margin-right: 0px;
-    background: url(../images/triangle-left.svg) no-repeat;
+    background: url(../../images/triangle-left.svg) no-repeat;
   }
   /* line 258, ../scss/_768up.scss */
   .page .story-4 img, .home .story-4 img {
@@ -2161,7 +2161,7 @@ you can add resource intensive styles.
     margin-bottom: 8px;
     width: 50px;
     height: 60px;
-    background: url(../images/tan-marker.svg) no-repeat;
+    background: url(../../images/tan-marker.svg) no-repeat;
     background-size: 100%;
   }
   /* line 292, ../scss/_768up.scss */
@@ -2262,7 +2262,7 @@ you can add resource intensive styles.
     margin-top: 20px;
     width: 50px;
     height: 60px;
-    background: url(../images/blue-marker.png) no-repeat;
+    background: url(../../images/blue-marker.png) no-repeat;
     background-size: 100%;
   }
   /* line 341, ../scss/_768up.scss */
