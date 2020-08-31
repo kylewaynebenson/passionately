@@ -1,0 +1,76 @@
+/* purgecss start ignore */
+/*@tailwind base;
+@tailwind components;*/
+/* purgecss end ignore */
+/*@tailwind utilities;*/
+@import "_grid.scss";
+@import "_mixins.scss";
+@import "_base.scss";
+@media only screen and (min-width: 400px) {
+
+
+	@import "_481up.scss";
+
+}
+
+/*
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 690px) {
+
+
+	@import "_768up.scss";
+
+}
+
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 900px) {
+
+
+	@import "_1030up.scss";
+
+}
+
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 1240px) {
+
+
+	@import "_1240up.scss";
+
+}
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+
+	@import "_2x.scss";
+
+}
+
+/*
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*/
+@media print {
+	@import "_print.scss";
+}

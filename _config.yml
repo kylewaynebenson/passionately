@@ -1,0 +1,22 @@
+title: The Passionately Project
+description: Is it possible to feel successful and satisfied?
+url: "https://www.passionately.design"
+permalink: pretty
+
+collections:
+  interviews:
+    output: true
+    sort_by: order
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.config.js
+  - netlify.toml
