@@ -6,7 +6,6 @@ permalink: pretty
 collections:
   interviews:
     output: true
-    sort_by: order
 
 exclude:
   - Gemfile
