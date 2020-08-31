@@ -7,7 +7,7 @@ description: Is it possible to feel successful and satisfied?
 ---
     <div class="list wrap">
         <div class="interviews">
-          {% for post in site.interviews %}
+          {% for post in site.interview %}
               <section>
                 <a href="{{site.baseurl}}{{ post.url }}"><div class="preview {{post.name  | replace: " ", "-"}}"></div></a>
                 <h1><a href="{{site.baseurl}}{{ post.url }}">{{ post.name }}</a></h1>
