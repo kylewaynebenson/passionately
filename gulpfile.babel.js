@@ -71,8 +71,7 @@ task("startServer", () => {
   );
 });
 
-const buildSite = series("buildJekyll");
-// const buildSite = series("buildJekyll", "processStyles");
+const buildSite = series("buildJekyll", "processStyles");
 
 exports.serve = series(buildSite, "startServer");
 exports.default = series(buildSite);
